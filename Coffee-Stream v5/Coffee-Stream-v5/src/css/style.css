@@ -1,0 +1,391 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background:#2d3b36 no-repeat center center fixed;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #fff; 
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2, {
+	color: #5a270c;
+	
+}
+h3, {
+	color: #5a270c;
+}
+a {
+	color: #150600;
+}
+
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .7em;
+	line-height: 1.5em ;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#image{
+  margin:100px 100px;
+}
+.active{
+   background: #fef1d9;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.name {
+	font-size: 2em;
+	margin: 0;
+	text-align: right;
+}
+
+.main-nav {
+	margin-top: 0px;
+    padding: 0px;
+}
+
+	.name a,
+	.main-nav a {
+        text-align: left;
+		display: block;
+		text-align: center;
+		padding: 5px 5px;
+		color: #5a270c;
+	}
+	
+	.main-nav a {
+		font-size: 1em;
+		color: #5a270c;
+		text-transform: uppercase;
+        float: down;
+	}
+
+	.main-nav a:hover {
+		color: #fcb040;
+	}
+
+
+/* ================================= 
+  Layout Containers
+==================================== */
+
+.main-header {
+	padding-top: .1em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+	color: #fff;
+}
+
+.banner {
+	color: #fff;
+	background: #5a2b0d;
+	padding: 1em 0;
+	margin-bottom: 32px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #5a270c;
+	padding: 2em;
+	margin-top: 30px;
+}
+
+/* ================================= 
+  Page Elements
+==================================== */
+
+.logo {
+	width: 50%;
+    margin-top: 100px;
+    box-shadow: 0 0 5px 2px;
+    border: 0;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 2;
+}
+
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 300px) {
+
+	body {
+		padding-top: 68px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+   
+/* ================================= 
+  Float Clearfix
+==================================== */   
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+/* ================================= 
+  Media
+==================================== */
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+    
+	}
+
+	.primary {
+		width: 33%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 33%;
+	}
+    
+}
+
+
+/* ================================= 
+  Contact Form
+==================================== */
+
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #253737;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #416b68;
+  border: 1px solid #253737;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  text-shadow: #333333 0 1px 0;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+    
+.flex-inner li {
+  width: 100px;
+}
+
+/* ================================= 
+  Rotating Images
+==================================== */
+
+#rotating-item-wrapper {
+	position: relative;
+	width: 980px;
+	height: 347px;
+}
+.rotating-item {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* ================================= 
+  Social Icons
+==================================== */
+
+.footer-social { 
+    float: right; 
+    margin-top: 15; 
+    padding: 35px; 
+    border: 5px;}
+
+.footer-social li { 
+    display: inline; 
+    float: right; 
+    margin: 0px;
+    padding: 18px 2px;
+}
+.footer-social span { 
+    margin-top: 5px;
+}
+.footer-social ul {
+    float: none;
+}
+.test{
+    float: none;
+}
